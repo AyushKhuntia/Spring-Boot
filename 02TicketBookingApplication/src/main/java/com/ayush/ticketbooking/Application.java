@@ -13,6 +13,7 @@ public class Application implements CommandLineRunner{
 
 	@Autowired
 	public TicketService ticketService;
+	
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}

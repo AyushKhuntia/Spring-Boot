@@ -36,7 +36,7 @@ public class Ticket {
 		return ticket_Id;
 	}
 
-	public void setTicket_Id(int ticket_Id) {
+	public void setTicket_Id(Integer ticket_Id) {
 		this.ticket_Id = ticket_Id;
 	}
 
@@ -80,7 +80,7 @@ public class Ticket {
 		this.email = email;
 	}
 
-	public Ticket(int ticket_Id, String passangerName, String sourceStation, String destinationStation, Date travelDate,
+	public Ticket(Integer ticket_Id, String passangerName, String sourceStation, String destinationStation, Date travelDate,
 			String email) {
 		super();
 		this.ticket_Id = ticket_Id;

@@ -43,7 +43,7 @@ public class TicketController {
 		return ticketService.updateTicket(ticketId, newEmail);
 	}
 	
-	@DeleteMapping(value="/{ticketId")
+	@DeleteMapping(value="/{ticketId}")
 	public void DeleteTicket(@PathVariable("ticketId") Integer ticketId) {
 		ticketService.deleteTicket(ticketId);
 	}
