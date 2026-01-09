@@ -1,5 +1,5 @@
 package com.ayush.ticketbooking.service;
-
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,4 +40,8 @@ public class TicketService {
 		ticketDao.deleteById(ticketId);
 	}
 	
+//	Retrive ticket Based on PassangerName
+	public List<Ticket> getTicketByPassangerName(String passangerName) {
+		return ticketDao.findByPassangerName(passangerName);
+	}
 }

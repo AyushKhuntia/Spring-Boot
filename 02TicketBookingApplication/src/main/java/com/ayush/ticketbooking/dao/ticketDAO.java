@@ -8,4 +8,5 @@ import com.ayush.ticketbooking.model.Ticket;
 @Repository
 public interface ticketDAO extends CrudRepository<Ticket, Integer>{
 
+
 }

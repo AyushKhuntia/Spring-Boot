@@ -1,5 +1,7 @@
 package com.ayush.ticketbooking.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,10 +29,10 @@ public class TicketController {
 	}
 	
 //	get individual ticket
-	@GetMapping(value="/{ticketId}")
-	public Ticket getTicketById(@PathVariable("ticketId") Integer ticketId) {
-		return ticketService.getTicketById(ticketId);
-	}
+//	@GetMapping(value="/{ticketId}")
+//	public Ticket getTicketById(@PathVariable("ticketId") Integer ticketId) {
+//		return ticketService.getTicketById(ticketId);
+//	}
 	
 //	Create a Ticket.
 	@PostMapping(value="/create")
@@ -47,6 +49,13 @@ public class TicketController {
 	public void DeleteTicket(@PathVariable("ticketId") Integer ticketId) {
 		ticketService.deleteTicket(ticketId);
 	}
+	
+//	http://localhost:8080/ticket/sandhya
+	@GetMapping(value="/{passangerName}")
+	public List<Ticket> getTicketByPassangerName(@PathVariable("passangerName") String passangeName) {
+		return ticketService.getTicketByPassangerName(passangeName);
+	}
+	
 	
 	
 }
