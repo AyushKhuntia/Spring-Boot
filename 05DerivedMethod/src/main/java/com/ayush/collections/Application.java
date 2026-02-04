@@ -31,11 +31,11 @@ public class Application implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		
-		List<Person> personList = Arrays.asList(
-				new Person("Kiran","shyam","kiran@gmail.com",20),
-				new Person("Ram","kumar","ram@gmail.com",22)
-				);
-		Iterable<Person> list = personService.saveAllPerson(personList);
+//		List<Person> personList = Arrays.asList(
+//				new Person("Kiran","shyam","kiran@gmail.com",20),
+//				new Person("Ram","kumar","ram@gmail.com",22)
+//				);
+//		Iterable<Person> list = personService.saveAllPerson(personList);
 		
 		Iterable<Person> persons = personService.getAllPersons();
 		for(Person person : persons) {
